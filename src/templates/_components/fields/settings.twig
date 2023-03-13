@@ -1,0 +1,19 @@
+{% import "_includes/forms" as forms %}
+{{ forms.selectField({
+    label: 'Type',
+    instructions: '',
+    id: 'rateType',
+    name: 'type',
+    value: field['type'] ?? 'apy',
+    options: [
+        {
+            "value": "apy",
+            "label": "APY",
+        },
+        {
+            "value": "apr",
+            "label": "APR",
+        }
+    ],
+    errors: field.getErrors('type')
+}) }}

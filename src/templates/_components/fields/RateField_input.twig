@@ -1,0 +1,26 @@
+{% from '_includes/forms' import text %}
+
+{% block input %}
+    <div class="RateFieldWrapper">
+        <div class="RateField-input">
+            {{ text({
+                id: name ~ '-nominal',
+                name: name ~ '[nominal]',
+                value: value ? value.nominal,
+                size: 5,
+                inputmode: 'decimal',
+            }) }}
+            <div aria-hidden="true">%</div>
+        </div>
+        <div class="RateField-input">
+            {{ text({
+                id: name ~ '-annual',
+                name: name ~ '[annual]',
+                value: value ? value.annual,
+                size: 5,
+                inputmode: 'decimal',
+            }) }}
+            <div aria-hidden="true">% {{ type | upper }}</div>
+        </div>
+    </div>
+{% endblock %}

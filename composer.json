@@ -1,0 +1,36 @@
+{
+  "name": "wojodesign/craft-rate",
+  "description": "A field type to enter nominal and apy/apr annual rates for financial banking institutions",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin"
+  ],
+  "support": {
+    "docs": "https://wojodesign.com/docs/rate/",
+    "issues": "https://wojodesign.com/plugins/rate/support",
+    "source": "https://github.com/wojodesign/craft-rate"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wojo Design",
+      "homepage": "https://wojodesign.com"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^4.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "wojodesign\\rate\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Rate Field",
+    "handle": "rate-field"
+  }
+}
