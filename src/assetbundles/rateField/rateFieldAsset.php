@@ -1,6 +1,6 @@
 <?php
 
-namespace wojodesign\rate\assetbundles\rateField;
+namespace wojodesign\rate\assetbundles\RateField;
 
 use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
